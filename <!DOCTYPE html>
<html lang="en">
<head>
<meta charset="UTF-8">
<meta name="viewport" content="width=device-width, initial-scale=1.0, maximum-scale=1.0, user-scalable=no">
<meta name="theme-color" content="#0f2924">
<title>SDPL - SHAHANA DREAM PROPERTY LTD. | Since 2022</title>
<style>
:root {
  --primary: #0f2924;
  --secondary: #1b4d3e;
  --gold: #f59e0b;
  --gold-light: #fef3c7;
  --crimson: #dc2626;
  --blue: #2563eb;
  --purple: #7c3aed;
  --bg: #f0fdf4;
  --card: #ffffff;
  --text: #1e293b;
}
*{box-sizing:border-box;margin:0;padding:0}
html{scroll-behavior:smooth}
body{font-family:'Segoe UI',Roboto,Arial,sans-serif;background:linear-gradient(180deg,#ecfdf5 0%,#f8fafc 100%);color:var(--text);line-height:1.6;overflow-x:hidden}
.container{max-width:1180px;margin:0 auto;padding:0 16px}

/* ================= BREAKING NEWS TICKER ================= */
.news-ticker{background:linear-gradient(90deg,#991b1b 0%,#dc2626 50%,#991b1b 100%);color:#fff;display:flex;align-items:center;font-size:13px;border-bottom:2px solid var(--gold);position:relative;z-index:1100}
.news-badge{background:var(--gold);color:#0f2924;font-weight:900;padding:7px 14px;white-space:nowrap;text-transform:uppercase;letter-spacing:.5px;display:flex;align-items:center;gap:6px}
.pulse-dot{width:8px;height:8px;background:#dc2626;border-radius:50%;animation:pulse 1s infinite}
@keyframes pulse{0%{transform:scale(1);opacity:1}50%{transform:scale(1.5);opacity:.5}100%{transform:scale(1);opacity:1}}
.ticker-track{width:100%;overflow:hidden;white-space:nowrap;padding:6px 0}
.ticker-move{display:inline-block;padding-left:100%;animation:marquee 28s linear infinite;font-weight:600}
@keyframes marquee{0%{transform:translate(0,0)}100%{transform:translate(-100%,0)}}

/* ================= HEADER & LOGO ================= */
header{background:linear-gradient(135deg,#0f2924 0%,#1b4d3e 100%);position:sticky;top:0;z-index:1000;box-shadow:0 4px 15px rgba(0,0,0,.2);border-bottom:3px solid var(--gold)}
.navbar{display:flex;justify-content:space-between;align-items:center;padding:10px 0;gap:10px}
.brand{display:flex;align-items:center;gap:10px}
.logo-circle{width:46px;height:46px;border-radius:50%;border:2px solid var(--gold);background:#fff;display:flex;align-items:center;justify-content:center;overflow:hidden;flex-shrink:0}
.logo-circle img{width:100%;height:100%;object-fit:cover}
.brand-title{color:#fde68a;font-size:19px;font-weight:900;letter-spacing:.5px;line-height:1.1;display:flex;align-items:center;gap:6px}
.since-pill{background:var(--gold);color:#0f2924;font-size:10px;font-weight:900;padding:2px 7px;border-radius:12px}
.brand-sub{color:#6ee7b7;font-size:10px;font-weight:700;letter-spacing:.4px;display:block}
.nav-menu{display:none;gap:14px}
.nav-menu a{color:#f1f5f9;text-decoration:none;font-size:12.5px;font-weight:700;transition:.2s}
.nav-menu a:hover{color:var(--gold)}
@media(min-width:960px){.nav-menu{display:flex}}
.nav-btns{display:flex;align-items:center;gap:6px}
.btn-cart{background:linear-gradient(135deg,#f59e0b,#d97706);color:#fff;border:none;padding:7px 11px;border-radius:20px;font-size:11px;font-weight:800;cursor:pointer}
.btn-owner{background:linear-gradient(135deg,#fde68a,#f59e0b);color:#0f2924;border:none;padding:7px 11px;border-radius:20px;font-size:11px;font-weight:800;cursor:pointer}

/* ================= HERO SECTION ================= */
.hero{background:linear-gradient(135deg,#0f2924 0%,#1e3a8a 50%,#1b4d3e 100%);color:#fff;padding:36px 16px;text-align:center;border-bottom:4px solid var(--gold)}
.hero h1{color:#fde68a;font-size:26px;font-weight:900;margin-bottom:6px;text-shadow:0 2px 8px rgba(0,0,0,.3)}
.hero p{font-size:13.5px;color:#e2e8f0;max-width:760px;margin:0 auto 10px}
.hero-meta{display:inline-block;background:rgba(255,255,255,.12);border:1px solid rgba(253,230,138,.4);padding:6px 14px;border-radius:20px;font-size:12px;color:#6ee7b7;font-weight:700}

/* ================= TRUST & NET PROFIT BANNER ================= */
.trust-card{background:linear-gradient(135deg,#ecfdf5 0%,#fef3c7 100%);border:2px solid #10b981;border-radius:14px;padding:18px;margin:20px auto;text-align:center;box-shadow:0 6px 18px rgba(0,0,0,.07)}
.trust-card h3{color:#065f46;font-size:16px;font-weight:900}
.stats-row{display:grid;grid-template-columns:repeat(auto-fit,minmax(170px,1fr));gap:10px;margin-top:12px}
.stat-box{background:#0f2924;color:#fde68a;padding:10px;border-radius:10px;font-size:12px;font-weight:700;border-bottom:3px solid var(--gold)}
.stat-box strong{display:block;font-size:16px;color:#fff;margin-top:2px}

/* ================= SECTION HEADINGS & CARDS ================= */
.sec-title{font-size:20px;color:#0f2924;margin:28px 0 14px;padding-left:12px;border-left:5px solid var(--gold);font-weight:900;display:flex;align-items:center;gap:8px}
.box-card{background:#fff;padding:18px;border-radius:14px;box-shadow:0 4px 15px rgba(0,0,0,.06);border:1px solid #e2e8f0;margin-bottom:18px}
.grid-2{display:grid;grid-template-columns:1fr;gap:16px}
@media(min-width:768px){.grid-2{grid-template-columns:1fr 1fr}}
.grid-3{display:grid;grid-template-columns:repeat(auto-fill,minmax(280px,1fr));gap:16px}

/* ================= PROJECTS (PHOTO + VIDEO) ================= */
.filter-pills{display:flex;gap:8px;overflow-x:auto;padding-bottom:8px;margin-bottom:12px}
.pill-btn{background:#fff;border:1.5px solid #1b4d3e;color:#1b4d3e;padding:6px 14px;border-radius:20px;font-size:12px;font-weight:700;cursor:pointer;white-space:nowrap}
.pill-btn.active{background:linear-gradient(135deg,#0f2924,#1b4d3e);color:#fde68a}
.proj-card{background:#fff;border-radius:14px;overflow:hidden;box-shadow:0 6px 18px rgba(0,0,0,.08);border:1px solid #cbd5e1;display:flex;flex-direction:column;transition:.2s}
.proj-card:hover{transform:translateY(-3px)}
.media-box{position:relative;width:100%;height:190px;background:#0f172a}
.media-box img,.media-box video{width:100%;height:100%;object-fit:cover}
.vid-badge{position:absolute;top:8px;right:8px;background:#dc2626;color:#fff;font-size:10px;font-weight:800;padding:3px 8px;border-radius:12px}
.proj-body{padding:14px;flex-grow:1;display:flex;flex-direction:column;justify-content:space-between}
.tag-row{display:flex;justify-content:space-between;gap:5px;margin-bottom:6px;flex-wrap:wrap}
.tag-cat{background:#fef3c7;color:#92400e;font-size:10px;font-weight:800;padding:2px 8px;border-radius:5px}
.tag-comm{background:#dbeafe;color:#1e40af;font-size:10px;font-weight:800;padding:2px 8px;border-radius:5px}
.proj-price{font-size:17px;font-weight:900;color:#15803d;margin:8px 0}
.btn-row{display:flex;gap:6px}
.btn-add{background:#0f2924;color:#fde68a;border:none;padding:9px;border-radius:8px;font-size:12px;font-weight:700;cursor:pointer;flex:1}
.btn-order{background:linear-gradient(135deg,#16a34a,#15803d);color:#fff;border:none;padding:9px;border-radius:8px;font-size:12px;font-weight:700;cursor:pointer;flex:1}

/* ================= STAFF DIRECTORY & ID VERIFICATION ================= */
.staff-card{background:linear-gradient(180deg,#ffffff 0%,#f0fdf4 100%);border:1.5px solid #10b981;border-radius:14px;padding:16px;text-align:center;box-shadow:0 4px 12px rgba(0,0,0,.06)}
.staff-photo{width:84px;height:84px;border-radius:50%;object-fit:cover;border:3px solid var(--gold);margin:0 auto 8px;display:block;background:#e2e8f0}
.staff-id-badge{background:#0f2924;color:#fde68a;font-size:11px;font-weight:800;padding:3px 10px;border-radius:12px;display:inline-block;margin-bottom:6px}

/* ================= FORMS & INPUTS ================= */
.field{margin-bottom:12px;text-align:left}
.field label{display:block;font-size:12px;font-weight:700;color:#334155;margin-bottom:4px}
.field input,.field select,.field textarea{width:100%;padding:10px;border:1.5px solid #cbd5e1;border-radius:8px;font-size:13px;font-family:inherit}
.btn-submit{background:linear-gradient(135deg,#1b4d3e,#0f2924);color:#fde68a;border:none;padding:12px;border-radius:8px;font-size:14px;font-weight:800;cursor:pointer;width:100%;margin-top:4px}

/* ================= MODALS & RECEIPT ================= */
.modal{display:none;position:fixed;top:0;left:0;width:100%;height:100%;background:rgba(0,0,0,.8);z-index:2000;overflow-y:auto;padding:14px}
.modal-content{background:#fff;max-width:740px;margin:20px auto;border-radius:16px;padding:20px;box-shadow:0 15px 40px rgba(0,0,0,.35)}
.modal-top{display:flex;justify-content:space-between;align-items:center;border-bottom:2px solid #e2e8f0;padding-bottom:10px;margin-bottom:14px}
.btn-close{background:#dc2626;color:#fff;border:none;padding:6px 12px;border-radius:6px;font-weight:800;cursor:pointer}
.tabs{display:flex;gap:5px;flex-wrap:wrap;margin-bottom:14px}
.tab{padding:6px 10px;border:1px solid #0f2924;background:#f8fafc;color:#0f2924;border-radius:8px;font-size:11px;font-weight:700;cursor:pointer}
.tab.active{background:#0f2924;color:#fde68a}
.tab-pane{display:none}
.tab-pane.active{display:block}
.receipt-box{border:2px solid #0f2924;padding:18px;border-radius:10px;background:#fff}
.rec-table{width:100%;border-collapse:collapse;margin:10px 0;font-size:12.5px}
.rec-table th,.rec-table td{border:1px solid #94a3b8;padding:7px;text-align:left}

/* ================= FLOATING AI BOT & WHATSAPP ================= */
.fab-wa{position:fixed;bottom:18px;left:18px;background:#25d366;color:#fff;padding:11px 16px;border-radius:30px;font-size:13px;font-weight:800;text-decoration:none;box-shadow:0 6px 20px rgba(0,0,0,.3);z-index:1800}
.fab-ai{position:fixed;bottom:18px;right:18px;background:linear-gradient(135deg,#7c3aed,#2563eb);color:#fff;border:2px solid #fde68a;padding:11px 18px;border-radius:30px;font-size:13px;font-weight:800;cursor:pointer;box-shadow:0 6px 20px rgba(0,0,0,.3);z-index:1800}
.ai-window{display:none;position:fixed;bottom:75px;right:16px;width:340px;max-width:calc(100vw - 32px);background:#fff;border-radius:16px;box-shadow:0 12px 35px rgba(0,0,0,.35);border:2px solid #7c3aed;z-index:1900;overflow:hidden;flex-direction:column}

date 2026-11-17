@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0f2924">
+<title>SDPL - SHAHANA DREAM PROPERTY LTD. | Since 2022</title>
+<style>
+:root {
+  --primary: #0f2924;
+  --secondary: #1b4d3e;
+  --gold: #f59e0b;
+  --gold-light: #fef3c7;
+  --crimson: #dc2626;
+  --blue: #2563eb;
+  --purple: #7c3aed;
+  --bg: #f0fdf4;
+  --card: #ffffff;
+  --text: #1e293b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',Roboto,Arial,sans-serif;background:linear-gradient(180deg,#ecfdf5 0%,#f8fafc 100%);color:var(--text);line-height:1.6;overflow-x:hidden}
+.container{max-width:1180px;margin:0 auto;padding:0 16px}
+
+/* ================= BREAKING NEWS TICKER ================= */
+.news-ticker{background:linear-gradient(90deg,#991b1b 0%,#dc2626 50%,#991b1b 100%);color:#fff;display:flex;align-items:center;font-size:13px;border-bottom:2px solid var(--gold);position:relative;z-index:1100}
+.news-badge{background:var(--gold);color:#0f2924;font-weight:900;padding:7px 14px;white-space:nowrap;text-transform:uppercase;letter-spacing:.5px;display:flex;align-items:center;gap:6px}
+.pulse-dot{width:8px;height:8px;background:#dc2626;border-radius:50%;animation:pulse 1s infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.5}100%{transform:scale(1);opacity:1}}
+.ticker-track{width:100%;overflow:hidden;white-space:nowrap;padding:6px 0}
+.ticker-move{display:inline-block;padding-left:100%;animation:marquee 28s linear infinite;font-weight:600}
+@keyframes marquee{0%{transform:translate(0,0)}100%{transform:translate(-100%,0)}}
+
+/* ================= HEADER & LOGO ================= */
+header{background:linear-gradient(135deg,#0f2924 0%,#1b4d3e 100%);position:sticky;top:0;z-index:1000;box-shadow:0 4px 15px rgba(0,0,0,.2);border-bottom:3px solid var(--gold)}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:10px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo-circle{width:46px;height:46px;border-radius:50%;border:2px solid var(--gold);background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+.logo-circle img{width:100%;height:100%;object-fit:cover}
+.brand-title{color:#fde68a;font-size:19px;font-weight:900;letter-spacing:.5px;line-height:1.1;display:flex;align-items:center;gap:6px}
+.since-pill{background:var(--gold);color:#0f2924;font-size:10px;font-weight:900;padding:2px 7px;border-radius:12px}
+.brand-sub{color:#6ee7b7;font-size:10px;font-weight:700;letter-spacing:.4px;display:block}
+.nav-menu{display:none;gap:14px}
+.nav-menu a{color:#f1f5f9;text-decoration:none;font-size:12.5px;font-weight:700;transition:.2s}
+.nav-menu a:hover{color:var(--gold)}
+@media(min-width:960px){.nav-menu{display:flex}}
+.nav-btns{display:flex;align-items:center;gap:6px}
+.btn-cart{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border:none;padding:7px 11px;border-radius:20px;font-size:11px;font-weight:800;cursor:pointer}
+.btn-owner{background:linear-gradient(135deg,#fde68a,#f59e0b);color:#0f2924;border:none;padding:7px 11px;border-radius:20px;font-size:11px;font-weight:800;cursor:pointer}
+
+/* ================= HERO SECTION ================= */
+.hero{background:linear-gradient(135deg,#0f2924 0%,#1e3a8a 50%,#1b4d3e 100%);color:#fff;padding:36px 16px;text-align:center;border-bottom:4px solid var(--gold)}
+.hero h1{color:#fde68a;font-size:26px;font-weight:900;margin-bottom:6px;text-shadow:0 2px 8px rgba(0,0,0,.3)}
+.hero p{font-size:13.5px;color:#e2e8f0;max-width:760px;margin:0 auto 10px}
+.hero-meta{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(253,230,138,.4);padding:6px 14px;border-radius:20px;font-size:12px;color:#6ee7b7;font-weight:700}
+
+/* ================= TRUST & NET PROFIT BANNER ================= */
+.trust-card{background:linear-gradient(135deg,#ecfdf5 0%,#fef3c7 100%);border:2px solid #10b981;border-radius:14px;padding:18px;margin:20px auto;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.07)}
+.trust-card h3{color:#065f46;font-size:16px;font-weight:900}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:12px}
+.stat-box{background:#0f2924;color:#fde68a;padding:10px;border-radius:10px;font-size:12px;font-weight:700;border-bottom:3px solid var(--gold)}
+.stat-box strong{display:block;font-size:16px;color:#fff;margin-top:2px}
+
+/* ================= SECTION HEADINGS & CARDS ================= */
+.sec-title{font-size:20px;color:#0f2924;margin:28px 0 14px;padding-left:12px;border-left:5px solid var(--gold);font-weight:900;display:flex;align-items:center;gap:8px}
+.box-card{background:#fff;padding:18px;border-radius:14px;box-shadow:0 4px 15px rgba(0,0,0,.06);border:1px solid #e2e8f0;margin-bottom:18px}
+.grid-2{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+
+/* ================= PROJECTS (PHOTO + VIDEO) ================= */
+.filter-pills{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:12px}
+.pill-btn{background:#fff;border:1.5px solid #1b4d3e;color:#1b4d3e;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap}
+.pill-btn.active{background:linear-gradient(135deg,#0f2924,#1b4d3e);color:#fde68a}
+.proj-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.08);border:1px solid #cbd5e1;display:flex;flex-direction:column;transition:.2s}
+.proj-card:hover{transform:translateY(-3px)}
+.media-box{position:relative;width:100%;height:190px;background:#0f172a}
+.media-box img,.media-box video{width:100%;height:100%;object-fit:cover}
+.vid-badge{position:absolute;top:8px;right:8px;background:#dc2626;color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:12px}
+.proj-body{padding:14px;flex-grow:1;display:flex;flex-direction:column;justify-content:space-between}
+.tag-row{display:flex;justify-content:space-between;gap:5px;margin-bottom:6px;flex-wrap:wrap}
+.tag-cat{background:#fef3c7;color:#92400e;font-size:10px;font-weight:800;padding:2px 8px;border-radius:5px}
+.tag-comm{background:#dbeafe;color:#1e40af;font-size:10px;font-weight:800;padding:2px 8px;border-radius:5px}
+.proj-price{font-size:17px;font-weight:900;color:#15803d;margin:8px 0}
+.btn-row{display:flex;gap:6px}
+.btn-add{background:#0f2924;color:#fde68a;border:none;padding:9px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;flex:1}
+.btn-order{background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;border:none;padding:9px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;flex:1}
+
+/* ================= STAFF DIRECTORY & ID VERIFICATION ================= */
+.staff-card{background:linear-gradient(180deg,#ffffff 0%,#f0fdf4 100%);border:1.5px solid #10b981;border-radius:14px;padding:16px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.staff-photo{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);margin:0 auto 8px;display:block;background:#e2e8f0}
+.staff-id-badge{background:#0f2924;color:#fde68a;font-size:11px;font-weight:800;padding:3px 10px;border-radius:12px;display:inline-block;margin-bottom:6px}
+
+/* ================= FORMS & INPUTS ================= */
+.field{margin-bottom:12px;text-align:left}
+.field label{display:block;font-size:12px;font-weight:700;color:#334155;margin-bottom:4px}
+.field input,.field select,.field textarea{width:100%;padding:10px;border:1.5px solid #cbd5e1;border-radius:8px;font-size:13px;font-family:inherit}
+.btn-submit{background:linear-gradient(135deg,#1b4d3e,#0f2924);color:#fde68a;border:none;padding:12px;border-radius:8px;font-size:14px;font-weight:800;cursor:pointer;width:100%;margin-top:4px}
+
+/* ================= MODALS & RECEIPT ================= */
+.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:2000;overflow-y:auto;padding:14px}
+.modal-content{background:#fff;max-width:740px;margin:20px auto;border-radius:16px;padding:20px;box-shadow:0 15px 40px rgba(0,0,0,.35)}
+.modal-top{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #e2e8f0;padding-bottom:10px;margin-bottom:14px}
+.btn-close{background:#dc2626;color:#fff;border:none;padding:6px 12px;border-radius:6px;font-weight:800;cursor:pointer}
+.tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:14px}
+.tab{padding:6px 10px;border:1px solid #0f2924;background:#f8fafc;color:#0f2924;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer}
+.tab.active{background:#0f2924;color:#fde68a}
+.tab-pane{display:none}
+.tab-pane.active{display:block}
+.receipt-box{border:2px solid #0f2924;padding:18px;border-radius:10px;background:#fff}
+.rec-table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12.5px}
+.rec-table th,.rec-table td{border:1px solid #94a3b8;padding:7px;text-align:left}
+
+/* ================= FLOATING AI BOT & WHATSAPP ================= */
+.fab-wa{position:fixed;bottom:18px;left:18px;background:#25d366;color:#fff;padding:11px 16px;border-radius:30px;font-size:13px;font-weight:800;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:1800}
+.fab-ai{position:fixed;bottom:18px;right:18px;background:linear-gradient(135deg,#7c3aed,#2563eb);color:#fff;border:2px solid #fde68a;padding:11px 18px;border-radius:30px;font-size:13px;font-weight:800;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:1800}
+.ai-window{display:none;position:fixed;bottom:75px;right:16px;width:340px;max-width:calc(100vw - 32px);background:#fff;border-radius:16px;box-shadow:0 12px 35px rgba(0,0,0,.35);border:2px solid #7c3aed;z-index:1900;overflow:hidden;flex-direction:column}
